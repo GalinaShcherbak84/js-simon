@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 //  5 numeri generati casualmente.
     var numeri = 5 ;
     var numberList =[];
@@ -8,14 +9,16 @@ $(document).ready(function(){
             numberList.push(number);
         }
     }
-// Alert
-//alert(numberList );
 // Timer di 30 secondi.
     var time = 0;
     var timeEnd = setInterval(function(){
         if(time == 3){
             clearInterval(timeEnd);
             $('.numeri').text('Il tempo è terminato.');
+            setTimeout(function(){
+                var utente = parseInt(prompt('Inserisci uno alla volta i numeri visti'));
+             },1000)
+         
         }else{
             time++;
             console.log(time);
@@ -23,7 +26,7 @@ $(document).ready(function(){
             $('.numeri').text(numberList);
         }
     }, 1000);
-        
+    
 // fine document ready    
     });
 
