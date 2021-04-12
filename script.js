@@ -17,6 +17,7 @@ $(document).ready(function(){
         if(time == 10){
             clearInterval(timeEnd);
             $('.numeri').text('Il tempo è terminato.');
+            $('.timer').text('Tempo scaduto');
                 setTimeout(function(){
                     for(var i = 0; i< numeri; i++){
                         var utente = parseInt(prompt('Inserisci uno alla volta i numeri visti').trim());
@@ -31,12 +32,9 @@ $(document).ready(function(){
                     $('.numeri').text('I tuoi numeri sono: ' + utenteList);
                     var numeriUguali = $('.numeri_uguali');
                     numeriUguali.show();
-                    numeriUguali.text('I indovinato ' + numeriIndovinati.length + ' numeri.' + ' ' +'I numeri indovinati sono: ' + numeriIndovinati);
+                    numeriUguali.text('Hai indovinato ' + numeriIndovinati.length + ' numeri.' + ' ' +'I numeri indovinati sono: ' + numeriIndovinati);
 
                  },1000)
-                 
-            
-            
         }else{
             time++;
             console.log(time);
