@@ -1,10 +1,10 @@
 $(document).ready(function(){
-
-//  5 numeri generati casualmente.
+//ref
     var numeri = 5 ;
     var numberList =[];
     var utenteList =[];
     var numeriIndovinati = [];
+//  5 numeri generati casualmente.
     while(numberList.length < numeri){
         var number = randomNamber(1, 100);
         if(! numberList.includes(number)){
