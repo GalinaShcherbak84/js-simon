@@ -32,7 +32,12 @@ $(document).ready(function(){
                     $('.numeri').text('I tuoi numeri sono: ' + utenteList);
                     var numeriUguali = $('.numeri_uguali');
                     numeriUguali.show();
-                    numeriUguali.text('Hai indovinato ' + numeriIndovinati.length + ' numeri.' + ' ' +'I numeri indovinati sono: ' + numeriIndovinati);
+                    if(numeriIndovinati.length > 0 ){
+                        numeriUguali.text('Hai indovinato ' + numeriIndovinati.length + ' numeri.' + ' ' +'I numeri indovinati sono: ' + numeriIndovinati);
+                    }else{
+                        numeriUguali.text('Non hai indovinato neanche un numero.');
+                    }
+                    
 
                  },1000)
         }else{
