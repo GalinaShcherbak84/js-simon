@@ -16,7 +16,7 @@ $(document).ready(function(){
     var timeEnd = setInterval(function(){
         if(time == 10){
             clearInterval(timeEnd);
-            $('.numeri').text('Il tempo è terminato.');
+            $('.numeri').text('- - - - - - - - -');
             $('.timer').text('Tempo scaduto');
                 setTimeout(function(){
                     for(var i = 0; i< numeri; i++){
@@ -35,7 +35,7 @@ $(document).ready(function(){
                     if(numeriIndovinati.length > 0 ){
                         numeriUguali.text('Hai indovinato ' + numeriIndovinati.length + ' numeri.' + ' ' +'I numeri indovinati sono: ' + numeriIndovinati);
                     }else{
-                        numeriUguali.text('Non hai indovinato neanche un numero.');
+                        numeriUguali.text('Non hai indovinato neanche un numero.')
                     }
                     
 
