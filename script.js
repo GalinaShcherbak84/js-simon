@@ -31,7 +31,7 @@ $(document).ready(function(){
                     $('.numeri').text('I tuoi numeri sono: ' + utenteList);
                     var numeriUguali = $('.numeri_uguali');
                     numeriUguali.show();
-                    numeriUguali.text('I numeri indovinati sono: ' + numeriIndovinati);
+                    numeriUguali.text('I indovinato ' + numeriIndovinati.length + ' numeri.' + ' ' +'I numeri indovinati sono: ' + numeriIndovinati);
 
                  },1000)
                  
