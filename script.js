@@ -9,15 +9,18 @@ $(document).ready(function(){
         }
     }
 // Alert
-    alert(numberList );
+//alert(numberList );
 // Timer di 30 secondi.
     var time = 0;
     var timeEnd = setInterval(function(){
-        if(time == 30){
+        if(time == 3){
             clearInterval(timeEnd);
+            $('.numeri').text('Il tempo è terminato.');
         }else{
             time++;
             console.log(time);
+            $('.timer').text(time);
+            $('.numeri').text(numberList);
         }
     }, 1000);
         
