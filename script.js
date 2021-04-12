@@ -15,10 +15,15 @@ $(document).ready(function(){
         if(time == 3){
             clearInterval(timeEnd);
             $('.numeri').text('Il tempo è terminato.');
-            setTimeout(function(){
-                var utente = parseInt(prompt('Inserisci uno alla volta i numeri visti'));
-             },1000)
-         
+                setTimeout(function(){
+                    for(var i = 0; i< numeri; i++){
+                        var utente = parseInt(prompt('Inserisci uno alla volta i numeri visti').trim());
+                        console.log(utente);
+                    }
+                 },1000)
+                 
+            
+            
         }else{
             time++;
             console.log(time);
